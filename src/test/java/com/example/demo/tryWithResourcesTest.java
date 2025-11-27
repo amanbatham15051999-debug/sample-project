@@ -11,7 +11,7 @@ public class tryWithResourcesTest {
 	@Test
 	public void testTryWithResources() throws Exception {
 		try(AutoCloseableResourceClass res = new AutoCloseableResourceClass()){
-			System.out.println("Was the resource Cloased "+res.isCLosed());
+			System.out.println("Was the resource Closed "+res.isCLosed());
 		}
 		
 		System.out.println("Did the resource closed after try catch block "+ AutoCloseableResourceClass.wasCLosed());
